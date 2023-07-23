@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Quora</title>
+        <style>
+                *{
+                        margin: 0;
+                }
+                .screen-container{
+                        background-image: url("background.webp");
+                        background-repeat: no-repeat;
+                        background-size: 100% 100%;
+                        height: 100vh;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                }
+                .quora-container{
+                        height: 65%;
+                        background-color: rgb(253, 247, 247);
+                        width: 65%;
+                }
+                .title{
+                        background-color: rgb(246, 248, 248);
+                        height: 20%;
+
+                }
+                .content{
+                        background-color: rgb(251, 249, 247);
+                        height: 60%;
+                        display: flex;
+                        justify-content: space-between;
+                }
+                .left-container{
+                        background-color: rgb(251, 250, 250);
+                        height: 103.5%;
+                        width: 48%;
+                }
+                .right-container{
+                        background-color: rgb(250, 249, 249);
+                        height: 103.5%;
+                        width: 49%;
+                        
+                }
+                .middle-container{
+                        height: 95%;
+                        background-color: rgb(204, 203, 203);
+                        width: 0.5%;
+                        align-self: center;
+                }
+                .bottom-container{
+                        background-color: rgb(246, 249, 249);
+                        height: 20%;
+                }
+                .login{
+                        margin-left: 18px;
+                        margin-top: 8px;
+                        margin-bottom: 10px;
+                        font-weight: bold;
+                        font-size: 20px;
+                }
+                .line{
+                        height: 1%;
+                        background-color: rgb(205, 201, 201);
+                        width: 90%;
+                        margin-left: 18px;
+                        margin-top: 2px;
+                        
+                }
+                .Email{
+                        margin-left: 18px;
+                        margin-top: 14px;
+                        font-weight: bold;
+                        font-size: 20px;
+                }
+                .Password{
+                        margin-left: 18px;
+                        margin-top: 14px;
+                        font-weight: bold;
+                        font-size: 20px;
+                }
+                .email,.password{
+                        margin-left: 15px;
+                        margin-top: 5px;
+                        width: 90%;
+                        height: 12%;
+                        background-color: transparent;
+                        border-color: rgb(217, 220, 220);
+
+                }
+              
+                .line1{
+                        height: 2%;
+                        background-color: rgb(202, 205, 205);
+                        margin-left: 1px;
+                        margin-right: 1px;
+                        margin-top: -10px;
+                        
+                }
+                .fgt-pass{
+                        margin-top: 26px;
+                        margin-left: 13px;
+                        font-weight: lighter;
+                }   
+                .abs2{
+                       
+                        
+                }
+                .box4{
+                        
+                        
+                }    
+                .Login-btn{
+                        left: 1130px;
+                        top: 407px;
+                        position: absolute;
+                        border-top-left-radius:35%;
+                        border-bottom-left-radius: 35%;
+                        border-top-right-radius: 35%;
+                        border-bottom-right-radius:35%;
+                        width: fit-content;
+                        background-color: rgb(71, 162, 241);
+                        padding: 10px;
+                        font-weight: bold;
+                        font-size: 20px;
+                        margin-top: 3px;
+                        padding-left: 20px;
+                        padding-right: 20px;
+                        padding-top: 10px;
+                        padding-bottom: 10px;
+                        color: aliceblue;
+                        border-color: rgb(71, 162, 241)
+                }  
+                .Login-btn:hover{
+                        transition: all 1s;
+                        background-color: blueviolet;
+                }
+                .mini-bottom-container1{
+                        width: 100%;
+                        height: 45%;
+                        background-color: rgb(252, 253, 251);
+                }
+                .mini-bottom-container2{
+                        width: 100%;
+                        height: 45%;
+                        background-color: rgb(215, 216, 214);
+                }
+                .about{
+                        margin-left: 200px;
+                        margin-top: -8px
+                }
+                .terms{
+                        color: rgb(25, 25, 206);
+                }
+                .para{
+                        color: rgb(186, 182, 182);
+                        margin-left: 15px;
+                        margin-top: 10px;
+                        
+                        font-size: 17px;
+                }
+                .google{
+                        margin-left: 20px;
+                        margin-top: 20px;
+                        font-size: 20px;
+                        padding-top: 8px;
+                        padding-bottom: 8px;
+                        padding-left: 20px;
+                        padding-right: 160px;
+                        text-align: center;  
+                        border-color: rgb(220, 220, 220); 
+                             
+                }
+                .facebook{
+                        margin-left: 20px;
+                        margin-top: 20px;
+                        font-size: 20px;
+                        padding-top: 8px;
+                        padding-bottom: 8px;
+                        padding-left: 20px;
+                        padding-right: 137px;
+                        text-align: center;
+                        border-color: rgb(220, 222, 222);         
+                }
+                .Google{
+                        margin-left: 40px;
+                       
+                }
+                .Facebook{
+                        margin-left: 40px;
+                }
+                .Gg{
+                        position: absolute;
+                        left: 298px;
+                        top: 275px;
+                        height: 30px;
+                        width: 30px;
+                        border-top-left-radius: 15px;
+                        border-top-right-radius: 15px;
+                        border-bottom-left-radius: 15px;
+                        border-bottom-right-radius: 15px;
+                }
+                .Fb{
+                        position: absolute;
+                        left: 299px;
+                        top: 338px;
+                        height: 30px;
+                        width: 30px;
+                        border-top-left-radius: 15px;
+                        border-top-right-radius: 15px;
+                        border-bottom-left-radius: 15px;
+                        border-bottom-right-radius: 15px;
+                }
+                .sign{
+                        margin-left: 150px;
+                        margin-top: 20px;
+                        font-size: 18px;
+                        font-weight: bold;
+                }
+                .Quora{
+                        position: absolute;
+                        left: 690px;
+                        top: 125px;
+                        height: 40px;
+                        width:150px;
+
+                }
+                .place{
+                        margin-left: 280px;
+                        margin-top: 40px;
+                        font-size: 17px;
+                        font-weight: bold;
+                }
+                .hindi{
+                        position: absolute;
+                        left: 725px;
+                        top: 473px;
+                        height: 21px;
+                        width:75px;
+                        
+                }
+        </style>
+</head>
+<body>
+   <div class="screen-container">
+        <div class="quora-container">
+                <div class="title"> 
+                        <img class="Quora" src="Quora.png" alt="">
+                        <p>.</p>
+                        <p class="place">A place to share knowlegde and better understand the world</p>
+                </div>
+                <div class="content">
+                        <div class="left-container">
+                                <p class="para">By continuning you indicate that you agree to Quora's <br><span class="terms">Terms of Serrvice</span> and <span class="terms">Privacy Policy.</span></p>
+                                <button class=" google"><p class="Google">Continue with Google</p></button>
+                                <button class=" facebook"><p class="Facebook">Continue with Facebook</p></button>
+                                <img class="Gg" src="google.png" alt="">
+                                <img class="Fb" src="facebook.jpg" alt="">
+                                <p class="sign">Sign up with email</p>
+                        </div>
+                        <div class="middle-container"></div>
+                        <div class="right-container">
+                                <p class="login">Login</p>
+                                <p class="line"></p>
+                                <p class="Email">Email</p>
+                                <input type="text" class="email" id="username" name="username">
+                                <p class="Password">Password</p>
+                                <input type="password" class="password" id="pwd" name="pwd">
+                                <p class="fgt-pass">Forgot Password?</p>
+                                <button class="Login-btn">Login</button>
+                        </div>
+                </div>
+                <div class="bottom-container">
+                        <p>.</p>
+                        <p class="line1"></p>
+                        <div class="mini-bottom-container1">
+                                <img class="hindi" src="hindi.png" alt="">
+                        </div>
+                        <div class="mini-bottom-container2">
+                                <p>.</p>
+                                <p class="about">About . Carrers . Privacy . Contact . Languages . Your Ad Choices . Press . Quora,inc.2023</p>
+                        </div>
+                </div>
+        </div> 
+   </div>     
+</body>
+</html>
+             
